@@ -1,0 +1,164 @@
+<%- layout('layouts/boiler') %>
+
+  <style>
+    .dragme {
+      margin-left: -250px !important;
+      margin-right: 50px !important;
+    }
+
+    .drag {
+      margin-right: -279px !important;
+    }
+
+    @media (min-width: 1025px) {
+      .house {
+        margin-left: -90px !important;
+      }
+    }
+
+    .hilux {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 100px;
+
+    }
+
+    .hen {
+      padding-left: 90px;
+      padding-top: 100px;
+      padding-bottom: 20px;
+    }
+
+    .vision {
+      margin-bottom: 70px;
+      margin-top: 70px;
+      margin-left: 50px;
+    }
+  </style>
+
+
+  <div class="banner h-96 flex flex-row"> <!-- Changed h-80 to h-96 -->
+
+    <div class="bg-darker-blue h-full w-2/4 flex items-center flex-col justify-center p-4">
+      <p class="house mb-5 lg:-ml-14 text-sm font-medium text-white"> <a href="/"><i class="fas fa-house mr-2"></i></a>•
+        <a href="/company">Company</a>
+        • Vision, Mission & Core Value
+      </p>
+      <div class="drag text-5xl font-bold z-50 text-white right-0 -mr-10">
+        Vision, Mission & Core Value
+      </div>
+    </div>
+
+    <div class="relative h-full w-3/4">
+      <img
+        src="/img/eng4.jpg"
+        class="object-cover h-full w-full opacity-75" alt="">
+    </div>
+  </div>
+
+
+
+
+  <div class="vision mt-6 mb-6 flex">
+    <div class="ml-12 mt-8 mb-10">
+      <h2 class="text-2xl font-bold text-blue-900">VISION</h2>
+      <p class="text-xl text-gray-800 mt-4 italic">
+        <span class="text-5xl text-spring-green"><i class="fa-solid fa-quote-left"></i></span>
+        To revolutionize the built environment by pioneering innovative, sustainable, and inclusive solutions that
+        elevate global infrastructure, empower communities, and foster a harmonious coexistence with nature.
+        <span class="text-5xl text-spring-green"><i class="fa-solid fa-quote-right"></i></span>
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="bg-gray-400 flex h-screen justify-center items-center">
+    <!-- Image Section -->
+    <img
+      src="/img/eng3.jpg"
+      class="h-full w-3/4 object-cover pl-8 pt-16 pb-16 rounded-lg shadow-lg" alt="">
+
+    <!-- Card Section -->
+    <div class="dragme bg-dark-blue text-white p-8 w-1/2 ml-[-150px] pr-8 shadow-lg">
+      <div class="flex flex-col items-start space-y-4 p-4">
+        <p class="text-lg font-medium">
+          <span class="text-teal font-bold text-2xl mr-2">01</span> Delivering innovative and durable engineering
+          solutions.
+        </p>
+        <p class="text-lg font-medium">
+          <span class="text-teal font-bold text-2xl mr-2">02</span> Challenging norms with advanced methods and
+          technology.
+        </p>
+        <p class="text-lg font-medium">
+          <span class="text-teal font-bold text-2xl mr-2">03</span> Creating infrastructure that benefits future
+          generations.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div
+    style="background: url(/images/bg-core-value.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <h1 class="hen uppercase font-bold pt-10 text-4xl ml-6  text-white">Core Values</h1>
+    <!-- Flex container -->
+    <div class="hilux flex flex-wrap lg:flex-nowrap gap-4 px-4">
+      <!-- Flex items -->
+      <div class="w-full lg:flex-1 p-4 rounded-lg text-white">
+        <h2 class="text-2xl font-bold"><span class="text-6xl font-bold">G</span>rowth</h2>
+        <p>We prioritize continuous personal and professional growth, fostering an environment that supports skill
+          development and the pursuit of knowledge. This commitment to learning enables both individuals and the
+          organization to achieve lasting success.</p>
+      </div>
+
+      <div class="w-full lg:flex-1 p-4 rounded-lg text-white">
+        <h2 class="text-2xl font-bold"><span class="text-6xl font-bold">R</span>esponsibility</h2>
+        <p>We hold ourselves accountable for our actions and decisions, ensuring that we act with integrity and in
+          alignment with organizational values. Responsibility guides us toward ethical behavior, trust, and dependable
+          performance.</p>
+      </div>
+
+      <div class="w-full lg:flex-1 p-4 rounded-lg text-white">
+        <h2 class="text-2xl font-bold"><span class="text-6xl font-bold">A</span>daptability</h2>
+        <p>We embrace change and approach challenges with a flexible mindset. By remaining agile and open to new ideas,
+          we improve processes, increase efficiency, and ensure resilience in an ever-evolving environment.</p>
+      </div>
+
+
+      <div class="w-full lg:flex-1 p-4 rounded-lg text-white">
+        <h2 class="text-2xl font-bold"><span class="text-6xl font-bold">C</span>ollaboration</h2>
+        <p>We believe in the power of teamwork, where open communication and mutual respect are at the core. By working
+          together, we can leverage diverse perspectives, build trust, and achieve collective success in all endeavors.
+        </p>
+      </div>
+
+      <div class="w-full lg:flex-1 p-4 rounded-lg text-white">
+        <h2 class="text-2xl font-bold"><span class="text-6xl font-bold">E</span>xcellence</h2>
+        <p>We are committed to delivering the highest standards of quality in everything we do. Striving for excellence
+          in every task, we aim to exceed expectations, drive innovation, and ensure the success of our organization and
+          its people.</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="flex items-center justify-center mt-10">
+    <div class="text-center p-6">
+        <div class="flex items-center justify-center"><img src="/images/whiteb.png" alt="Image" class="h-20"></div>
+
+
+        <div class="contact align-middle mb-4">
+            <a href="/contact" class="contact-link">
+                Contact<i class="fas fa-arrow-right ml-2 font-medium"></i>
+            </a>
+        </div>
+        <div class="text-blue-500 text-xl mb-8">+220 515 4308</div>
+        <div class="text-gray-500 mb-4">
+            MSJ Plaza Office 07, Brusubi TurnTable - After AfricMed
+
+        </div>
+    </div>
+</div>

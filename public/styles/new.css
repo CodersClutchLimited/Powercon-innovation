@@ -1,0 +1,228 @@
+.model {
+    width: 80%;
+    background: linear-gradient(to bottom, #fafafa, #fff);
+    margin-top: -100px !important;
+    position: relative;
+    z-index: 10;
+}
+
+.paragraph {
+    padding: 50px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .model {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+.resource {
+    width: 90vw;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+
+.stack {
+    overflow: hidden;
+    width: 50%;
+    height: 20%;
+}
+
+.stack img {
+    object-fit: cover;
+    height: 50vh;
+}
+
+.stack1 {
+    overflow: hidden;
+    width: 50%;
+    height: auto;
+}
+
+.stack1 img {
+    object-fit: cover;
+    height: 50vh;
+}
+
+.stack:hover h1 {
+    color: #257DCD;
+}
+
+.stack1:hover h1 {
+    color: #257DCD;
+}
+
+.buttons {
+    margin-top: 20px !important;
+}
+
+.parag {
+    margin-bottom: 50px;
+}
+
+.divs {
+    border-radius: 40px;
+}
+
+@media (min-width: 1024px) {
+    .oldman {
+        margin-top: -100px !important;
+    }
+
+}
+
+.main-cont {
+    margin-top: 100px;
+}
+
+.oldman {
+    height: 550px;
+    width: 550px
+}
+
+.oldman img {
+    margin-left: 70px;
+}
+
+.vision {
+    margin-left: 50px;
+    padding-bottom: 50px;
+}
+
+/* @media screen and (max-width:ZZ) */
+
+
+
+
+.chairman {
+    margin-bottom: 2rem;
+}
+
+.overlap {
+    margin-top: -150px !important;
+    width: 90%;
+    background: white !important;
+    z-index: 10;
+}
+ 
+.overlap-inner {
+    width: 90%;
+    padding: 25px;
+    padding-top: 50px;
+}
+
+.underL {
+    height: 6px;
+    width: 250px;
+    border-radius: 30px;
+}
+
+
+/* WORK FORCE PAGE */
+.main-page {
+    display: flex; 
+    padding-bottom: -200px;
+}
+
+.lefter {
+    padding: 40px;
+    background: #021934;
+    flex: 1 1 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.righter {
+    background: #E5E7EB;
+    flex-shrink: 0; 
+}
+
+.righter img {
+    padding: 50px;
+}
+
+.grid {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Responsive Text Scaling */
+@media (max-width: 768px) {
+    .lefter h1 {
+        font-size: 1.125rem; /* Slightly smaller font size for medium screens */
+    }
+
+    .lefter p, .lefter h2 {
+        font-size: 0.875rem; /* Adjust text size to make sure everything fits */
+    }
+}
+
+@media (max-width: 480px) {
+    .lefter h1 {
+        font-size: 1rem; /* Even smaller font size on small screens */
+    }
+
+    .lefter p, .lefter h2 {
+        font-size: 0.75rem; /* Further reduce text size */
+    }
+}
+
+
+.image-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 15s infinite;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.contacter {
+    padding-left: 80px;
+}
+
+.contacter1 {
+    padding-left: 50px;
+
+}
+
+.contacter2 {
+    padding-left: 50px;
+
+}
+
+.contacter3 {
+    padding-left: 50px;
+}
+

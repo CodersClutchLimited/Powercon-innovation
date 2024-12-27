@@ -1,0 +1,78 @@
+<%- layout('layouts/boiler') %>
+
+<!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="/styles/accord.css">
+
+
+<!-- Hero Section (Unchanged) -->
+<div class="banner h-96 flex flex-row">
+    <div class="bg-darker-blue h-full w-2/4 flex items-center flex-col justify-center p-4">
+        <p class="house mb-5 md:-ml-14 text-sm font-medium text-white">
+            <a href="/"><i class="fas fa-house mr-2"></i></a>• <a href="/">Company</a> • Ethics
+        </p>
+        <div class="drag text-5xl font-bold z-50 text-white right-0 -mr-10">Ethics</div>
+    </div>
+    <div class="relative h-full w-3/4">
+        <img src="/img/eng5.jpg"
+             class="object-cover h-full w-full" alt="">
+    </div>
+</div>
+
+<!-- Accordion Section -->
+<section class="secter px-4 lg:px-24 flex justify-center">
+    <div class="w-full lg:w-7/12 bg-white z-50">
+        <div class="text-center mb-3 pt-10">
+            <h2 class="text-4xl font-bold text-blue-900">Ethics</h2>
+        </div>
+        <div class="accordion">
+            <!-- Quality Standards Accordion -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Quality Standards <i class="fas fa-plus plus-icon"></i>
+                </button>
+                <div id="quality" class="accordion-content">
+                    <p class="">Our company is committed to maintaining the highest quality standards across all projects. Whether in construction, engineering, or specialized services, we follow strict quality control processes to ensure that every task is completed to perfection. We employ state-of-the-art technology and best industry practices to deliver services that exceed client expectations while maintaining long-term durability and efficiency in every project we undertake.</p>
+                </div>
+            </div>
+            <!-- Safety Accordion -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Safety <i class="fas fa-plus plus-icon"></i>
+                </button>
+                <div id="safety" class="accordion-content">
+                    <p>We prioritize the safety of our workforce, clients, and the communities we serve. Our operations adhere to rigorous safety protocols to minimize risks and ensure a safe working environment. From construction sites to engineering projects, we implement safety training programs, provide protective equipment, and conduct regular safety audits to ensure compliance with local and international safety standards.</p>
+                </div>
+            </div>
+            <!-- Reliability Accordion -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Reliability <i class="fas fa-plus plus-icon"></i>
+                </button>
+                <div id="reliability" class="accordion-content">
+                    <p>Our reputation for reliability is built on years of successful project completions across various sectors. We understand the importance of delivering projects on time, within budget, and without compromising on quality. Clients can count on us to meet deadlines and provide efficient solutions, no matter the scale or complexity of the project.</p>
+                </div>
+            </div>
+            <!-- Stakeholders Accordion -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Stakeholders <i class="fas fa-plus plus-icon"></i>
+                </button>
+                <div id="stakeholders" class="accordion-content">
+                    <p>We recognize the importance of strong relationships with our stakeholders, including clients, contractors, suppliers, and regulatory bodies. Our collaborative approach ensures clear communication and mutual respect, fostering long-term partnerships that are essential for the success of every project. We value input from all parties and work diligently to meet the expectations and needs of all stakeholders involved.</p>
+                </div>
+            </div>
+            <!-- Compliance & Ethics Code Accordion -->
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Compliance & Ethics Code <i class="fas fa-plus plus-icon"></i>
+                </button>
+                <div id="comply" class="accordion-content">
+                    <p>We operate with integrity and adhere strictly to local and international compliance standards. Our company upholds a strong ethical code that guides every aspect of our work, from procurement processes to project execution. We are committed to transparency, honesty, and ethical business practices, ensuring that all projects are completed with respect for legal regulations, environmental concerns, and social responsibilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/javascripts/accord.js"></script>

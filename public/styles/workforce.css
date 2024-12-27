@@ -1,0 +1,23 @@
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling issues */
+}
+.dash {
+    height: 8px;
+    width: 300px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.hero  {
+    height: 70vh;
+    background-color: #002453;
+}
+
+.mainer {
+    width: 90vw;
+    margin-top: -150px;
+    height: auto;
+}
+
+.anchor {
+    margin-top: 20px !important;
+}

@@ -1,0 +1,25 @@
+#slider {
+  display: flex;
+  gap: 10px;
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #slider .slide {
+    width: 40vw;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #slider .slide {
+    width: 60vw;
+    height: 20vh;
+  }
+}
+

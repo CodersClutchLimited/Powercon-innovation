@@ -1,0 +1,195 @@
+<%- layout('layouts/boiler') %>
+
+    <style>
+
+        @media (min-width: 1025px) {
+            .house {
+                margin-left: -90px !important;
+            }
+        }
+
+        .secter {
+            margin-left: 100px !important;
+            margin-right: 100px !important;
+            margin-top: -100px !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        @media screen and (max-width: 768px) {
+            .secter {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                margin-top: 0 !important;
+            }
+        }
+
+        .info {
+            padding-left: 80px;
+            padding-right: 80px;
+
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .info {
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100% !important;
+            }
+
+        }
+
+        .padme {
+            margin-top: 100px !important;
+        }
+
+        .ml {
+            margin-left: 1rem;
+        }
+    </style>
+
+
+
+    <div class="banner h-96 flex flex-row"> <!-- Changed h-80 to h-96 -->
+
+        <div class="bg-darker-blue h-full w-2/4 flex items-center flex-col justify-center p-4">
+            <p class="house mb-5 md:-ml-14 text-sm font-medium text-white"> <a href="/"><i
+                        class="fas fa-house mr-2"></i></a>• <a href="/">Company</a>
+                • Corporate Info</p>
+            <div class="drag text-5xl font-bold z-50 text-white right-0 -mr-10">Corporate Info
+            </div>
+        </div>
+
+        <div class="relative h-full w-3/4">
+            <img src="/img/eng2.jpg"
+                class="object-cover h-full w-full" alt="">
+        </div>
+    </div>
+
+    <section class="secter px-[100px] flex justify-center">
+        <div class="w-full lg:w-7/12 bg-white z-50">
+            <div class="text-center mb-3 pt-10">
+                <h2 class="text-4xl font-bold text-darker-blue">Profile and History</h2>
+            </div>
+            <div class="info text-gray-700 leading-relaxed p-2 space-y-4 px-10 text-left">
+                <p>
+                    Welcome to our company, your trusted partner in real estate, construction, and engineering solutions
+                    in The Gambia. With a commitment to innovation and excellence, we specialize in creating
+                    sustainable, cutting-edge infrastructure across various sectors. From residential housing to
+                    industrial projects, transportation systems, and renewable energy solutions, we provide
+                    comprehensive services tailored to meet the needs of our clients.
+                </p>
+                <ul class="list-disc list-inside">
+                    <li>Our focus areas are: <strong>Ivory Coast, Ghana, Sierra leone</strong>
+                    </li>
+                    <!-- Add more items here if needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="flex mb-8 items-start justify-center h-[55vh] mt-8 padme ml-3 mr-3">
+        <!-- Left (smaller) box -->
+        <div class="w-1/12 h-[50%] bg-darker-blue"></div>
+
+        <!-- Middle (second-largest) box with an image -->
+        <div class="flex-1 h-full bg-blue-200 mx-4">
+            <img src="/img/eng1.jpg"
+                alt="Image" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Right (largest) box -->
+        <div class="w-2/5 h-full hidden md:block">
+            <h1 class="text-2xl font-semibold text-darker-blue mb-6 p-4">Our experience over the past period.</h1>
+            <p class=" text-[16px] leading-relaxed font-medium text-gray-700 p-4 mb-4">
+                Founded in 2020, our company has successfully delivered over 50 projects valued over 200
+                million Dollars within half a decade. Our work has earned widespread recognition from private clients,
+                government agencies, and the public, whose lives have been enriched by our efforts. We are proud to
+                serve West Africa with dedication, innovation, and excellence.</p>
+
+            <div class="ml mt-10">
+                <a href="/" class="bg-blue-900 p-2 rounded-md text-xl font-medium text-white mt-6">Mission and
+                    Vision</a>
+            </div>
+        </div>
+    </div>
+    <!-- paragraph fallback -->
+    <div class="w-full lg:w-2/5 h-full p-3 block lg:hidden">
+        <h1 class="text-2xl font-semibold text-darker-blue mb-1 p-4">Our experience over the past period.</h1>
+        <p class="text-[16px] leading-relaxed font-medium text-gray-700 p-4">
+            Founded in 2020, our company has successfully delivered over 50 projects valued over 200
+            million Dollars within half a decade. Our work has earned widespread recognition from private clients,
+            government agencies, and the public, whose lives have been enriched by our efforts. We are proud to
+            serve West Africa with dedication, innovation, and excellence.
+        </p>
+    </div>
+
+
+
+
+    <div id="ceo" class="main-cont"
+        style="background: url(/images/bg-core-value.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-y-3">
+            <div class=" lg:flex justify-center items-center ml-6 ">
+                <div class="w-full pt-4">
+                    <p class="vision text-xl lg:text-2xl text-white italic">
+                        <span class="text-4xl text-spring-green"><i class="fa-solid fa-quote-left"></i></span>
+                        To revolutionize the built environment by pioneering innovative, sustainable, and inclusive
+                        solutions that elevate global infrastructure, empower communities, and foster a harmonious
+                        coexistence with nature.
+                        <span class="text-4xl text-spring-green"><i class="fa-solid fa-quote-right"></i></span>
+                    </p>
+                </div>
+            </div>
+            <div class="oldman pr-4 flex justify-center items-center chairman">
+                <img src="/images/Rich.png" alt="" class="object-cover w-full h-full">
+            </div>
+        </div>
+    </div>
+
+    <div class="overlap mx-auto bg-white mb-6 z-50">
+        <div class="overlap-inner grid grid-cols-1 gap-3 mx-auto mt-6 px-6 items-center">
+            <div class="mb-4">
+                <h1 class="text-4xl font-bold text-black text-center">Message From Chairman</h1>
+                <div class="bg-darker-blue mb-4 underL mt-4 mx-auto">
+
+                </div>
+                <p class="text-lg leading-relaxed text-darker-blue text-center">
+                    Welcome to our company. Over the years, we have been guided by a singular mission: to transform
+                    ideas into reality and create infrastructure that matters. Our team is passionate about delivering
+                    sustainable, innovative, and impactful solutions across The Gambia and beyond. Whether designing
+                    smart road systems, constructing green housing, or advancing renewable energy projects, we remain
+                    committed to excellence. Thank you for trusting us as your partner in building a better tomorrow.
+                </p>
+            </div>
+            <!-- Signature Section -->
+            <div class="mx-auto">
+                <p class="text-lg mt-6 font-medium italic text-darker-blue">
+                    Richard K. Asante / CEO / Executive Member Of The Board Of Directors
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex items-center justify-center mt-10">
+        <div class="text-center p-6">
+            <div class="flex items-center justify-center"><img src="/images/whiteb.png" alt="Image" class="h-20"></div>
+
+
+            <div class="contact align-middle mb-4">
+                <a href="/contact" class="contact-link">
+                    Contact<i class="fas fa-arrow-right ml-2 font-medium"></i>
+                </a>
+            </div>
+            <div class="text-blue-500 text-xl mb-8">+220 515 4308</div>
+            <div class="text-gray-500 mb-4">
+                MSJ Plaza Office 07, Brusubi TurnTable - After AfricMed
+
+            </div>
+        </div>
+    </div>

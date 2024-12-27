@@ -1,0 +1,329 @@
+<%- layout('layouts/boiler') %>
+  <style>
+    .model {
+      width: 80%;
+      background: linear-gradient(to bottom, #fafafa, #fff);
+      margin-top: -100px !important;
+      position: relative;
+      z-index: 10;
+    }
+
+    .paragraph {
+      padding: 50px !important;
+    }
+
+    video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-cover: cover;
+      z-index: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .model {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  </style>
+
+  <style>
+    .iconhover:hover {
+      background: rgb(5, 5, 92);
+    }
+  </style>
+
+
+  <!-- Hero Section with Video Background -->
+  <main class="relative text-white min-h-screen">
+    <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover">
+      <source src="https://videos.pexels.com/video-files/29885881/12831533_640_360_25fps.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="relative flex flex-col items-center justify-center min-h-screen bg-black bg-opacity-50">
+      <div class="px-6 text-center" id="scroll-content">
+        <h1 class="rob1 text-4xl sm:text-3xl md:text-5xl lg:text-17xl font-bold uppercase">
+          industrial construction
+        </h1>
+        <p class="para1 mt-5 text-2xl font-semibold z-50">
+          Providing a complete range of innovative industrial construction solutions
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <div class="model mx-auto">
+    <p class="paragraph text-center leading-relaxed text-xl font-medium">
+      Industrial construction demands precision, durability, and efficiency to meet the needs of today’s growing
+      industries. From designing large-scale facilities to ensuring optimal functionality, we approach every project
+      with expertise and innovation. For years, Powercon Innovation has been delivering high-quality, sustainable
+      industrial construction solutions that support the success of businesses and communities.
+    </p>
+  </div>
+
+
+  <div class="p-4 w-full mt-0 mb-4">
+    <div class="flex space-x-1 mt-3 h-2">
+      <div class="flex-1 bg-teal transform skew-x-12"></div>
+      <div class="flex-1 bg-dark-blue transform skew-x-12"></div>
+      <div class="flex-1 bg-lime-green transform skew-x-12"></div>
+    </div>
+  </div>
+
+  <div class="max-w-screen-xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-extrabold text-center mb-10">
+      INDUSTRIAL SERVICE AREAS
+    </h1>
+
+    <!-- Cards Container -->
+    <div class="divs grid grid-cols-1 md:grid-cols-3 gap-6 rounded-xl">
+      <div class="divs bg-white rounded-lg shadow-lg relative">
+        <img src="/img/warehouse.jpg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">WAREHOUSES</h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We specialize in designing and constructing efficient warehouses to optimize storage, logistics, and
+            operational flow.
+          </p>
+        </div>
+        <a href="/services/industry/warehouse"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+
+      <!-- Card 1: Bridge Replacement -->
+      <div class="bg-white rounded-lg shadow-lg relative">
+        <img src="/img/school.jpeg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">
+            SCHOOLS
+          </h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We create modern school buildings with safe, functional, and innovative spaces to foster effective learning
+            environments.
+          </p>
+        </div>
+        <a href="/services/industry/schools"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+
+      <!-- Card 2: Construction Engineering Inspections -->
+
+
+      <div class="divs bg-white rounded-lg shadow-lg relative">
+        <img src="/img/health.jpg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">HEALTH CENTERS</h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We design and build state-of-the-art health centers that prioritize accessible, efficient, and
+            patient-centered care.
+          </p>
+        </div>
+        <a href="/services/industry/health-centers"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+
+      <!-- Card 3: Freeways and Highways -->
+      <div class="divs bg-white rounded-lg shadow-lg relative">
+        <img src="/img/shopping.jpg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">SHOPPING CENTERS</h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We develop modern shopping centers that offer vibrant, functional spaces for retail, dining, and
+            entertainment experiences.
+          </p>
+        </div>
+        <a href="/services/industry/shopping-centers"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+      <!-- Card 3: Freeways and Highways -->
+      <div class="divs bg-white rounded-lg shadow-lg relative">
+        <img src="/img/recreation.jpeg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">RECREATIONAL CENTERS</h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We create recreational centers with versatile, engaging spaces that promote community wellness and leisure
+            activities.
+          </p>
+        </div>
+        <a href="/services/industry/recreational-centers"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+
+      <div class="divs bg-white rounded-lg shadow-lg relative">
+        <img src="/img/gastation.jpg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">FUEL AND GAS STATIONS</h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We design and construct efficient fuel and gas stations, ensuring modern facilities for seamless service and
+            safety.
+          </p>
+        </div>
+        <a href="/services/industry/fuel-gas-stations"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+
+      <div class="divs bg-white rounded-lg shadow-lg relative">
+        <img src="/img/data.jpg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">DATA CENTERS</h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We design and build advanced data centers that ensure high performance, security, and scalability to meet
+            the demands of modern businesses.
+          </p>
+        </div>
+        <a href="/services/industry/data-center"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+      <div class="divs bg-white rounded-lg shadow-lg relative">
+        <img src="/img/bank.jpg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">BANKING HALLS</h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We design and build modern banking halls, ensuring secure, efficient, and customer-friendly environments for
+            seamless financial services.
+          </p>
+        </div>
+        <a href="/services/industry/banking-hall"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+
+      <div class="divs bg-white rounded-lg shadow-lg relative">
+        <img src="/img/air.jpg" class="w-full h-56 object-cover rounded-lg" />
+        <div class="p-6">
+          <h2 class="font-bold text-lg mb-3">AIRPORTS</h2>
+          <p class="text-gray-600 mb-5 pb-6">
+            We design and build modern airports, ensuring efficient, secure, and passenger-friendly facilities for
+            seamless travel experiences.
+          </p>
+        </div>
+        <a href="/services/industry/airports"
+          class="absolute bottom-0 left-0 p-6 text-blue-600 font-semibold hover:underline">LEARN
+          MORE</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Include Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <div class="text-center py-16 mt-12">
+    <h2 class="text-2xl font-bold mb-2 relative inline-block">
+      OUR TAILORED SERVICES
+      <span class="custom-underline c"></span>
+    </h2>
+    <div class="swiper-container mt-12 mx-5 sm:mx-8">
+      <div class="swiper-wrapper">
+        <!-- Transportation -->
+        <div class="swiper-slide">
+          <a href="/services/transportation" class="flex flex-col items-center p-6 rounded-lg">
+            <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
+              <img src="/icons/route.png" alt="Transportation Icon" class="h-16">
+            </div>
+            <p class="mt-4 text-base font-bold">TRANSPORTATION</p>
+          </a>
+        </div>
+        <!-- Water Resources -->
+        <div class="swiper-slide">
+          <a href="/services/water-resources" class="flex flex-col items-center p-6 rounded-lg">
+            <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
+              <img src="/icons/water.png" alt="Water Resources Icon" class="h-16">
+            </div>
+            <p class="mt-4 text-base font-bold">WATER RESOURCES</p>
+          </a>
+        </div>
+        <!-- Power & Engineering -->
+        <div class="swiper-slide">
+          <a href="/services/power-eng" class="flex flex-col items-center p-6 rounded-lg">
+            <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
+              <img src="/icons/power.png" alt="Power & Engineering Icon" class="h-16">
+            </div>
+            <p class="mt-4 text-base font-bold">POWER & ENGINEERING</p>
+          </a>
+        </div>
+        <!-- Residential Construction -->
+        <div class="swiper-slide">
+          <a href="/services/residential-const" class="flex flex-col items-center p-6 rounded-lg">
+            <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
+              <img src="/icons/real-estate.png" alt="Residential Construction Icon" class="h-16">
+            </div>
+            <p class="mt-4 text-base font-bold">RESIDENTIAL CONSTRUCTION</p>
+          </a>
+        </div>
+        <!-- Industrial Construction -->
+        <div class="swiper-slide">
+          <a href="/services/industrial-const" class="flex flex-col items-center p-6 rounded-lg">
+            <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
+              <img src="/icons/industrial-park.png" alt="Industrial Construction Icon" class="h-16">
+            </div>
+            <p class="mt-4 text-base font-bold">INDUSTRIAL CONSTRUCTION</p>
+          </a>
+        </div>
+        <!-- Specialized Services -->
+        <div class="swiper-slide">
+          <a href="/services/specialized" class="flex flex-col items-center p-6 rounded-lg">
+            <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
+              <img src="/icons/privilege.png" alt="Specialized Services Icon" class="h-16">
+            </div>
+            <p class="mt-4 text-base font-bold">SPECIALIZED SERVICES</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 5,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    });
+  </script>

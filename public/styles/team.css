@@ -1,0 +1,32 @@
+/* Modal styling */
+#teamModal {
+    display: none;
+    backdrop-filter: blur(4px);
+}
+
+#teamModal.hidden {
+    display: none;
+}
+
+#teamModal:not(.hidden) {
+    display: flex;
+}
+
+/* Existing hover and transition styles remain */
+.group:hover .group-hover\:translate-y-0 {
+    transform: translateY(0%);
+}
+
+.group-hover\:translate-y-0 {
+    transform: translateY(100%);
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.rotate-0 {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
