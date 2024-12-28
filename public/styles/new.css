@@ -108,7 +108,7 @@
     background: white !important;
     z-index: 10;
 }
- 
+
 .overlap-inner {
     width: 90%;
     padding: 25px;
@@ -124,7 +124,7 @@
 
 /* WORK FORCE PAGE */
 .main-page {
-    display: flex; 
+    display: flex;
     padding-bottom: -200px;
 }
 
@@ -144,7 +144,7 @@
 
 .righter {
     background: #E5E7EB;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .righter img {
@@ -161,21 +161,27 @@
 /* Responsive Text Scaling */
 @media (max-width: 768px) {
     .lefter h1 {
-        font-size: 1.125rem; /* Slightly smaller font size for medium screens */
+        font-size: 1.125rem;
+        /* Slightly smaller font size for medium screens */
     }
 
-    .lefter p, .lefter h2 {
-        font-size: 0.875rem; /* Adjust text size to make sure everything fits */
+    .lefter p,
+    .lefter h2 {
+        font-size: 0.875rem;
+        /* Adjust text size to make sure everything fits */
     }
 }
 
 @media (max-width: 480px) {
     .lefter h1 {
-        font-size: 1rem; /* Even smaller font size on small screens */
+        font-size: 1rem;
+        /* Even smaller font size on small screens */
     }
 
-    .lefter p, .lefter h2 {
-        font-size: 0.75rem; /* Further reduce text size */
+    .lefter p,
+    .lefter h2 {
+        font-size: 0.75rem;
+        /* Further reduce text size */
     }
 }
 
@@ -197,19 +203,22 @@
     0% {
         transform: translateX(0);
     }
+
     33% {
         transform: translateX(-100%);
     }
+
     66% {
         transform: translateX(-200%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
 
 .contacter {
-    padding-left: 80px;
+    padding-left: 50px;
 }
 
 .contacter1 {
@@ -226,3 +235,6 @@
     padding-left: 50px;
 }
 
+.location {
+    padding-right: 20px;
+}
