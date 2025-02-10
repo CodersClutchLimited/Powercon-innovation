@@ -72,7 +72,109 @@ app.get('/services/specialized', (req, res) => {
 
 
 
+// blog pages
 
+app.get('/blog/power-eng', (req, res) => {
+    const articles = [
+        {
+            image: "https://image.shutterstock.com/image-photo/petroleum-refinery-industry-engineer-male-260nw-2489500275.jpg",
+            date: "October 23, 2023",
+            title: "Achieving High Productivity from Your Own Home Garden.",
+            description: "A Practical Guide to Achieving Satisfactory Results from Plants Grown in Your Home."
+        },
+        {
+            image: "https://image.shutterstock.com/image-photo/igniting-innovation-harnessing-power-coding-260nw-2425426569.jpg",
+            date: "October 23, 2023",
+            title: "The Best Guide to Planting Seeds with Optimal Results.",
+            description: "Effective Strategies and Techniques to Achieve Healthy and Productive Plant Growth."
+        },
+        {
+            image: "https://image.shutterstock.com/image-photo/technology-solar-cell-engineer-service-260nw-1820196929.jpg",
+            date: "October 23, 2023",
+            title: "Strategies for Caring for Your Garden More Efficiently and Productively.",
+            description: "An approach that improves plant performance and makes garden management easier."
+        }
+    ];
+
+    res.render('blogs/power', {articles})
+})
+
+
+app.get('/blog/green-energy', (req, res) => {
+    const articles = [
+        {
+            image: "https://image.shutterstock.com/image-photo/petroleum-refinery-industry-engineer-male-260nw-2489500275.jpg",
+            date: "October 23, 2023",
+            title: "Achieving High Productivity from Your Own Home Garden.",
+            description: "A Practical Guide to Achieving Satisfactory Results from Plants Grown in Your Home."
+        },
+        {
+            image: "https://image.shutterstock.com/image-photo/igniting-innovation-harnessing-power-coding-260nw-2425426569.jpg",
+            date: "October 23, 2023",
+            title: "The Best Guide to Planting Seeds with Optimal Results.",
+            description: "Effective Strategies and Techniques to Achieve Healthy and Productive Plant Growth."
+        },
+        {
+            image: "https://image.shutterstock.com/image-photo/technology-solar-cell-engineer-service-260nw-1820196929.jpg",
+            date: "October 23, 2023",
+            title: "Strategies for Caring for Your Garden More Efficiently and Productively.",
+            description: "An approach that improves plant performance and makes garden management easier."
+        }
+    ];
+
+    res.render('blogs/green', {articles})
+})
+
+
+app.get('/blog/construction', (req, res) => {
+    const articles = [
+        {
+            image: "https://image.shutterstock.com/image-photo/petroleum-refinery-industry-engineer-male-260nw-2489500275.jpg",
+            date: "October 23, 2023",
+            title: "Achieving High Productivity from Your Own Home Garden.",
+            description: "A Practical Guide to Achieving Satisfactory Results from Plants Grown in Your Home."
+        },
+        {
+            image: "https://image.shutterstock.com/image-photo/igniting-innovation-harnessing-power-coding-260nw-2425426569.jpg",
+            date: "October 23, 2023",
+            title: "The Best Guide to Planting Seeds with Optimal Results.",
+            description: "Effective Strategies and Techniques to Achieve Healthy and Productive Plant Growth."
+        },
+        {
+            image: "https://image.shutterstock.com/image-photo/technology-solar-cell-engineer-service-260nw-1820196929.jpg",
+            date: "October 23, 2023",
+            title: "Strategies for Caring for Your Garden More Efficiently and Productively.",
+            description: "An approach that improves plant performance and makes garden management easier."
+        }
+    ];
+
+    res.render('blogs/construction', {articles})
+})
+
+app.get('/blog/solar-power', (req, res) => {
+    const articles = [
+        {
+            image: "https://image.shutterstock.com/image-photo/petroleum-refinery-industry-engineer-male-260nw-2489500275.jpg",
+            date: "October 23, 2023",
+            title: "Achieving High Productivity from Your Own Home Garden.",
+            description: "A Practical Guide to Achieving Satisfactory Results from Plants Grown in Your Home."
+        },
+        {
+            image: "https://image.shutterstock.com/image-photo/igniting-innovation-harnessing-power-coding-260nw-2425426569.jpg",
+            date: "October 23, 2023",
+            title: "The Best Guide to Planting Seeds with Optimal Results.",
+            description: "Effective Strategies and Techniques to Achieve Healthy and Productive Plant Growth."
+        },
+        {
+            image: "https://image.shutterstock.com/image-photo/technology-solar-cell-engineer-service-260nw-1820196929.jpg",
+            date: "October 23, 2023",
+            title: "Strategies for Caring for Your Garden More Efficiently and Productively.",
+            description: "An approach that improves plant performance and makes garden management easier."
+        }
+    ];
+
+    res.render('blogs/solar', {articles})
+})
 
 
 

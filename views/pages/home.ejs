@@ -1,442 +1,559 @@
 <%- layout('layouts/boiler') %>
 
-  <style>
-    .iconhover:hover {
-      background: rgb(5, 5, 92);
+<style>
+  .iconhover:hover {
+    background: rgb(5, 5, 92);
+  }
+  .negativemargin {
+    margin-top: -100px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .shrinkme {
+      width: 70%;
+      margin: auto;
     }
+  }
 
-    @media screen and (min-width: 1024px) {
-      .shrinkme {
-        width: 70%;
-        margin: auto;
-      }
-    }
+  .custom-underline {
+    background: springgreen;
+  }
 
+  .invite {
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 15px;
+  }
 
-    .custom-underline {
-      background: springgreen;
-    }
+  .join {
+    background: limegreen !important;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
 
-    .invite {
-      border: 2px solid white;
-      padding: 30px;
-      border-radius: 15px;
-    }
-
-    .join {
-      background: limegreen !important;
-      border-radius: 15px;
-      margin-top: 20px;
-    }
-
-    /* .topper {
+  /* .topper {
       margin-top: -75px;
     } */
 
-    .cont1 {
-      width: 90%;
-      margin-top: -75px;
-    }
-  </style>
-  <!-- Hero Section with Video Background -->
-  <main class="relative text-white min-h-screen">
-    <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover">
-      <source src="Solar.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  .cont1 {
+    width: 90%;
+    margin-top: -75px;
+  }
 
-    <div class="relative flex flex-col items-center justify-center min-h-screen bg-black bg-opacity-50">
-      <div class="px-6 text-center" id="scroll-content">
-        <h1 class="rob1 text-5xl font-bold md:text-6xl">
-          Integrity . Honesty . Excellence
-        </h1>
-        <div class="relative mt-8">
-          <div class=" divider w-1/3 h-2 mx-auto bg-white"></div>
-        </div>
-        <div class="max-w-screen-md mx-auto">
-          <p class="para1 mt-10 text-2xl font-semibold text-center">
-            We aim to be the most outstanding Engineering and
-            Real estate Development firm in Africa and our other operational service areas
-          </p>
-        </div>
+  .maxw {
+    max-width: 1200px;
+  }
+</style>
+<!-- Hero Section with Video Background -->
+<main class="relative text-white min-h-screen">
+  <!-- Replace the video with an image -->
+  <img
+    src="https://img.freepik.com/premium-photo/portrait-happy-black-woman-solar-panel-phone-call-photovoltaic-plate-sustainability-advice-maintenance-eco-friendly-energy-cellphone-female-engineer-smile-power-saving-check_590464-209401.jpg?uid=R178129720&ga=GA1.1.1411535131.1738618804&semt=ais_hybrid" 
+    alt="Background Image"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+
+  <div
+    class="relative flex flex-col items-center justify-center min-h-screen bg-black bg-opacity-50"
+  >
+    <div class="px-6 text-center" id="scroll-content">
+      <h1 class="rob1 text-5xl font-bold md:text-6xl">
+        Integrity . Honesty . Excellence
+      </h1>
+      <div class="relative mt-8">
+        <div class="divider w-1/3 h-2 mx-auto bg-white"></div>
       </div>
-    </div>
-  </main>
-
-  <!-- New Slider Section with space on the left and right -->
-  <div class="relative  cont1 mx-auto">
-    <div class="w-full flex justify-center items-center">
-      <div class="relative overflow-hidden max-w-screen-xl bg-white mx-auto">
-        <div id="auto-slider" class="flex gap-6 mx-auto">
-          <!-- Slide 1 -->
-          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
-            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
-              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
-          </div>
-          <!-- Slide 2 -->
-          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
-            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
-              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
-          </div>
-          <!-- Slide 3 -->
-          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
-            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
-              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
-          </div>
-          <!-- Slide 4 -->
-          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
-            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
-              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
-          </div>
-          <!-- Slide 5 -->
-          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
-            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
-              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
-          </div>
-          <!-- Slide 6 -->
-          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
-            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
-              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="text-center py-16 mt-12 shrinkme">
-    <h2 class="text-2xl text-dark-blue font-bold mb-4 relative inline-block">
-      OUR TAILORED SERVICES
-      <span class="custom-underline text-spring-green c"></span>
-    </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 mt-12 gap-8 lg:gap-8 mx-5 sm:mx-8 items-center justify-center">
-
-      <!-- Transportation -->
-      <a href="/services/transportation"
-        class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg">
-        <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
-          <!-- Transportation SVG Icon -->
-          <img src="/icons/route.png" alt="" class="h-16">
-        </div>
-        <p class="mt-4 text-base font-bold">TRANSPORTATION</p>
-      </a>
-
-      <!-- Water Resources -->
-      <a href="/services/water-resources"
-        class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg">
-        <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
-          <!-- Water Resources SVG Icon -->
-          <img src="/icons/water.png" alt="" class="h-16">
-
-        </div>
-        <p class="mt-4 text-base font-bold">WATER RESOURCES</p>
-      </a>
-
-      <!-- Land Development -->
-      <a href="/services/power-eng"
-        class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg">
-        <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
-          <!-- Land Development SVG Icon -->
-          <img src="/icons/power.png" alt="" class="h-16">
-
-        </div>
-        <p class="mt-4 text-base font-bold">POWER & ENGINEERING</p>
-      </a>
-
-      <!-- Surveying -->
-      <a href="/services/residential-const"
-        class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg">
-        <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
-          <!-- Surveying SVG Icon -->
-          <img src="/icons/real-estate.png" alt="" class="h-16">
-        </div>
-        <p class="mt-4 text-base font-bold">RESIDENTIAL CONTRUCTION</p>
-      </a>
-
-      <!-- Environmental -->
-      <a href="/services/industrial-const"
-        class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg">
-        <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
-          <!-- Environmental SVG Icon -->
-          <img src="/icons/industrial-park.png" alt="" class="h-16">
-        </div>
-        <p class="mt-4 text-base font-bold">INDUSTRIAL CONTRUCTION</p>
-      </a>
-
-      <!-- Specialized Services -->
-      <a href="/services/specialized"
-        class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg">
-        <div class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center">
-          <!-- Specialized Services SVG Icon -->
-          <img src="/icons/privilege.png" alt="" class="h-16">
-        </div>
-        <p class="mt-4 text-base font-bold">SPECIALIZED SERVICES</p>
-      </a>
-
-    </div>
-  </div>
-
-
-
-
-  <div class="p-4 w-full mt-0">
-    <div class="flex space-x-1 mt-3 h-2">
-      <div class="flex-1 bg-teal transform skew-x-12"></div>
-      <div class="flex-1 bg-dark-blue transform skew-x-12"></div>
-      <div class="flex-1 bg-lime-green transform skew-x-12"></div>
-    </div>
-  </div>
-
-
-  <div class="flex flex-col mx-4 md:mx-10 p-4 md:p-6 justify-center items-center">
-    <p class="text-3xl font-bold uppercase mb-4 text-teal">News and Insights</p>
-
-    <!-- Slider Container -->
-    <div class="relative w-full">
-      <!-- Slider -->
-      <div id="slider" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth autoplay-slider">
-        <!-- Card 1 -->
-        <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg"
-                src="/img/new1.jpg"
-                alt="Article Image" />
-            </a>
-            <div class="p-4">
-              <a href="#">
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                  acquisitions 2021</h5>
-              </a>
-              <p class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <a href="#"
-                class="inline-flex items-center px-2 py-3 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-3 mb-0">
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg"
-                src="/img/new2.jpg"
-                alt="Article Image" />
-            </a>
-            <div class="p-4">
-              <a href="#">
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                  acquisitions 2021</h5>
-              </a>
-              <p class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <a href="#"
-                class="inline-flex items-center px-2 py-3 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg"
-                src="/img/new3.jpg"
-                alt="Article Image" />
-            </a>
-            <div class="p-4">
-              <a href="#">
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                  acquisitions 2021</h5>
-              </a>
-              <p class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <a href="#"
-                class="inline-flex items-center px-2 py-3 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg"
-                src="/img/new4.jpg"
-                alt="Article Image" />
-            </a>
-            <div class="p-4">
-              <a href="#">
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                  acquisitions 2021</h5>
-              </a>
-              <p class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <a href="#"
-                class="inline-flex items-center px-2 py-3 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg"
-                src="/img/new5.jpg"
-                alt="Article Image" />
-            </a>
-            <div class="p-4">
-              <a href="#">
-                <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-                  acquisitions 2021</h5>
-              </a>
-              <p class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
-                technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <a href="#"
-                class="inline-flex items-center px-2 py-3 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                  fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slider buttons for larger screens -->
-      <div class="absolute top-1/2 left-0 transform -translate-y-1/2 pl-4 md:flex hidden">
-        <button id="prevBtn" class="bg-gray-700 text-white p-2 rounded-full">
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-      </div>
-
-      <div class="absolute top-1/2 right-0 transform -translate-y-1/2 pr-4  md:flex hidden">
-        <button id="nextBtn" class="bg-gray-700 text-white p-2 rounded-full">
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="p-4 w-full mt-0">
-    <div class="flex space-x-1 mt-3 h-2">
-      <div class="flex-1 bg-teal transform skew-x-12"></div>
-      <div class="flex-1 bg-dark-blue transform skew-x-12"></div>
-      <div class="flex-1 bg-lime-green transform skew-x-12"></div>
-    </div>
-  </div>
-
-  <div class="relative mt-10 h-[50vh] max-h-[60vh]">
-    <img
-      src="https://img.freepik.com/premium-photo/portrait-man-working_1048944-28323402.jpg?ga=GA1.1.1951979353.1732287376&semt=ais_hybrid"
-      alt="5th Class Power Engineer Training Canada" class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-      <div class="invite">
-        <h1 class="text-3xl md:text-5xl font-bold text-white">JOIN OUR TEAM TODAY</h1>
-        <p class="mt-3 mb-4 text-white text-md font-s md:text-lg leading-relaxed max-w-xl">
-          Explore career opportunities with a well-established company that provides a supportive work environment and
-          enlightened corporate values.
+      <div class="max-w-screen-md mx-auto">
+        <p class="para1 mt-10 text-2xl font-semibold text-center">
+          We aim to be the most outstanding Engineering and Real estate
+          Development firm in Africa and our other operational service areas
         </p>
-  
-        <a href="#" class="join text-lg text-white font-semibold bg-spring-green p-4 pl-6 pr-6">Join Now</a>
-  
       </div>
     </div>
   </div>
-  <script src="slider.js"></script>
+</main>
+<!-- New Slider Section with space on the left and right -->
 
-  <script src="nav.js">
-  </script>
+<section class="py-12">
+  <div class="maxw mx-auto px-6 bg-white negativemargin relative">
+      <div class="flex flex-row justify-center items-center gap-12">
+          <img src="/icons/coders-logo.png" alt="Partner 1" class="h-24 grayscale hover:grayscale-0 transition object-cover">
+          <img src="https://opinionatedtype.wordpress.com/wp-content/uploads/2012/02/lowes-logo.png" alt="Partner 2" class="h-24  grayscale hover:grayscale-0 transition">
+          <img src="/icons/emiri.png" alt="Partner 3" class="h-24 grayscale hover:grayscale-0  transition">
+          <img src="https://standardhomesgambia.com/wp-content/uploads/2024/12/standard-homes-final-LOGO-1.png" alt="Partner 4" class="h-24  grayscale hover:grayscale-0 transition">
+          <img src="data:image/png;base64,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" alt="Partner 5" class="h-24  grayscale hover:grayscale-0 transition">
+          <img src="https://www.globalpropertiesvault.com/media/account/global-properties-circle-logo-jpeg606317dab7662.jpg" alt="Partner 1" class="h-24 grayscale hover:grayscale-0 transition">
+      </div>
+  </div>
+</section>
 
-  <script>
-    // JavaScript for continuous infinite auto-scroll and manual scroll buttons
-    const slider = document.getElementById('slider');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const sliderItems = slider.children; // All the slider cards
 
-    // Continuous auto-scroll functionality for large screens
-    function autoScroll() {
-      // Scroll by one card width
-      slider.scrollBy({
-        left: slider.offsetWidth, // Adjust based on the card width
-        behavior: 'smooth',
-      });
+<div class="text-center py-16 mt-12 shrinkme">
+  <h2 class="text-2xl text-dark-blue font-bold mb-4 relative inline-block">
+    OUR TAILORED SERVICES
+    <span class="custom-underline text-spring-green c"></span>
+  </h2>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-3 mt-12 gap-8 lg:gap-8 mx-5 sm:mx-8 items-center justify-center"
+  >
+    <!-- Transportation -->
+    <a
+      href="/services/transportation"
+      class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg"
+    >
+      <div
+        class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center"
+      >
+        <!-- Transportation SVG Icon -->
+        <img src="/icons/route.png" alt="" class="h-16" />
+      </div>
+      <p class="mt-4 text-base font-bold">TRANSPORTATION</p>
+    </a>
 
-      // Check if we are at the end of the slider and reset to the first item only if the scroll is at the end
-      if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
-        slider.scrollLeft = 0;
-      }
+    <!-- Water Resources -->
+    <a
+      href="/services/water-resources"
+      class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg"
+    >
+      <div
+        class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center"
+      >
+        <!-- Water Resources SVG Icon -->
+        <img src="/icons/water.png" alt="" class="h-16" />
+      </div>
+      <p class="mt-4 text-base font-bold">WATER RESOURCES</p>
+    </a>
+
+    <!-- Land Development -->
+    <a
+      href="/services/power-eng"
+      class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg"
+    >
+      <div
+        class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center"
+      >
+        <!-- Land Development SVG Icon -->
+        <img src="/icons/power.png" alt="" class="h-16" />
+      </div>
+      <p class="mt-4 text-base font-bold">POWER & ENGINEERING</p>
+    </a>
+
+    <!-- Surveying -->
+    <a
+      href="/services/residential-const"
+      class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg"
+    >
+      <div
+        class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center"
+      >
+        <!-- Surveying SVG Icon -->
+        <img src="/icons/real-estate.png" alt="" class="h-16" />
+      </div>
+      <p class="mt-4 text-base font-bold">RESIDENTIAL CONTRUCTION</p>
+    </a>
+
+    <!-- Environmental -->
+    <a
+      href="/services/industrial-const"
+      class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg"
+    >
+      <div
+        class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center"
+      >
+        <!-- Environmental SVG Icon -->
+        <img src="/icons/industrial-park.png" alt="" class="h-16" />
+      </div>
+      <p class="mt-4 text-base font-bold">INDUSTRIAL CONTRUCTION</p>
+    </a>
+
+    <!-- Specialized Services -->
+    <a
+      href="/services/specialized"
+      class="flex flex-col items-center mt-12 lg:shadow-lg sm:shadow-none md:shadow-none p-6 rounded-lg"
+    >
+      <div
+        class="bg-black iconhover w-32 h-32 rounded-full flex items-center justify-center"
+      >
+        <!-- Specialized Services SVG Icon -->
+        <img src="/icons/privilege.png" alt="" class="h-16" />
+      </div>
+      <p class="mt-4 text-base font-bold">SPECIALIZED SERVICES</p>
+    </a>
+  </div>
+</div>
+
+<div class="p-4 w-full mt-0">
+  <div class="flex space-x-1 mt-3 h-2">
+    <div class="flex-1 bg-teal transform skew-x-12"></div>
+    <div class="flex-1 bg-dark-blue transform skew-x-12"></div>
+    <div class="flex-1 bg-lime-green transform skew-x-12"></div>
+  </div>
+</div>
+
+<!-- blogs -->
+<div class="flex flex-col mx-4 md:mx-10 p-4 md:p-6 justify-center items-center">
+  <p class="text-3xl font-bold uppercase mb-8 text-teal-600">
+    News and Insights
+  </p>
+
+  <!-- Slider Container -->
+  <div class="relative w-full">
+    <!-- Slider -->
+    <div
+      id="slider"
+      class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth"
+    >
+      <!-- Card 1 -->
+      <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
+        <div
+          class="h-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="/blog/power-eng">
+            <img
+              class="rounded-t-lg w-full h-48 object-cover"
+              src="/img/new1.jpg"
+              alt="AI in Healthcare"
+            />
+          </a>
+          <div class="p-4 flex flex-col h-[calc(100%-12rem)]">
+            <a href="/blog/power-eng">
+              <h5
+                class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Innovations in Power Engineering
+              </h5>
+            </a>
+            <p
+              class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400 flex-grow"
+            >
+              Explore the latest advancements in power engineering technologies
+              and their impact on energy efficiency and sustainability.
+            </p>
+            <a
+              href="/blog/power-eng"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-600 rounded-lg hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-500 dark:hover:bg-teal-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
+        <div
+          class="h-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="/blog/green-energy">
+            <img
+              class="rounded-t-lg w-full h-48 object-cover"
+              src="/img/new2.jpg"
+              alt="Green Energy"
+            />
+          </a>
+          <div class="p-4 flex flex-col h-[calc(100%-12rem)]">
+            <a href="/blog/green-energy">
+              <h5
+                class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                The Future of Green Energy
+              </h5>
+            </a>
+            <p
+              class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400 flex-grow"
+            >
+              Explore the latest advancements in renewable energy technologies
+              and their impact on global sustainability efforts.
+            </p>
+            <a
+              href="/blog/green-energy"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-600 rounded-lg hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-500 dark:hover:bg-teal-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
+        <div
+          class="h-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="/blog/construction">
+            <img
+              class="rounded-t-lg w-full h-48 object-cover"
+              src="/img/new3.jpg"
+              alt="Cybersecurity Trends"
+            />
+          </a>
+          <div class="p-4 flex flex-col h-[calc(100%-12rem)]">
+            <a href="/blog/construction">
+              <h5
+                class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Smart road contruction
+              </h5>
+            </a>
+            <p
+              class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400 flex-grow"
+            >
+              Learn about the latest challenges in road construction and the
+              innovative solutions being developed to overcome them.
+            </p>
+            <a
+              href="/blog/construction"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-600 rounded-lg hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-500 dark:hover:bg-teal-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
+        <div
+          class="h-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="/blog/solar-power">
+            <img
+              class="rounded-t-lg w-full h-48 object-cover"
+              src="/img/new4.jpg"
+              alt="Remote Work"
+            />
+          </a>
+          <div class="p-4 flex flex-col h-[calc(100%-12rem)]">
+            <a href="/blog/solar-power">
+              <h5
+                class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                The Rise of Solar power usage
+              </h5>
+            </a>
+            <p
+              class="mb-2 text-sm font-normal text-gray-700 dark:text-gray-400 flex-grow"
+            >
+              Understand how solar power is transforming energy consumption and
+              the technologies driving this shift.
+            </p>
+            <a
+              href="/blog/solar-power"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-600 rounded-lg hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-500 dark:hover:bg-teal-600"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider buttons for larger screens -->
+    <div
+      class="absolute top-1/2 left-0 transform -translate-y-1/2 pl-4 md:flex hidden"
+    >
+      <button
+        id="prevBtn"
+        class="bg-gray-700 text-white p-2 rounded-full hover:bg-gray-800 transition-colors duration-300"
+      >
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <div
+      class="absolute top-1/2 right-0 transform -translate-y-1/2 pr-4 md:flex hidden"
+    >
+      <button
+        id="nextBtn"
+        class="bg-gray-700 text-white p-2 rounded-full hover:bg-gray-800 transition-colors duration-300"
+      >
+        <svg
+          class="w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="p-4 w-full mt-0">
+  <div class="flex space-x-1 mt-3 h-2">
+    <div class="flex-1 bg-teal transform skew-x-12"></div>
+    <div class="flex-1 bg-dark-blue transform skew-x-12"></div>
+    <div class="flex-1 bg-lime-green transform skew-x-12"></div>
+  </div>
+</div>
+
+<div class="relative mt-10 h-[50vh] max-h-[60vh]">
+  <img
+    src="https://img.freepik.com/premium-photo/portrait-man-working_1048944-28323402.jpg?ga=GA1.1.1951979353.1732287376&semt=ais_hybrid"
+    alt="5th Class Power Engineer Training Canada"
+    class="w-full h-full object-cover"
+  />
+  <div
+    class="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+  >
+    <div class="invite">
+      <h1 class="text-3xl md:text-5xl font-bold text-white">
+        JOIN OUR TEAM TODAY
+      </h1>
+      <p
+        class="mt-3 mb-4 text-white text-md font-s md:text-lg leading-relaxed max-w-xl"
+      >
+        Explore career opportunities with a well-established company that
+        provides a supportive work environment and enlightened corporate values.
+      </p>
+
+      <a
+        href="#"
+        class="join text-lg text-white font-semibold bg-spring-green p-4 pl-6 pr-6"
+        >Join Now</a
+      >
+    </div>
+  </div>
+</div>
+<script src="slider.js"></script>
+
+<script src="nav.js"></script>
+
+<script>
+  const slider = document.getElementById("slider");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  let scrollStep = slider.querySelector(".flex-none").clientWidth + 16; // Adjust for margin
+  let autoSlideInterval;
+
+  // Function to scroll to the next card
+  const scrollNext = () => {
+    const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+
+    if (slider.scrollLeft + scrollStep >= maxScrollLeft) {
+      slider.scrollTo({ left: 0, behavior: "smooth" }); // Reset to the first card
+    } else {
+      slider.scrollBy({ left: scrollStep, behavior: "smooth" });
     }
+  };
 
-    if (window.innerWidth > 768) {
-      // Start auto-scrolling
-      setInterval(autoScroll, 3000); // Scroll every 3 seconds
+  // Function to scroll to the previous card
+  const scrollPrev = () => {
+    if (slider.scrollLeft <= 0) {
+      slider.scrollTo({ left: slider.scrollWidth, behavior: "smooth" }); // Go to last card
+    } else {
+      slider.scrollBy({ left: -scrollStep, behavior: "smooth" });
     }
+  };
 
-    // Manual scroll functionality for prev and next buttons
-    prevBtn.addEventListener('click', () => {
-      slider.scrollBy({
-        left: -slider.offsetWidth, // Scroll one card width to the left
-        behavior: 'smooth',
-      });
+  // Start auto-slide
+  const startAutoSlide = () => {
+    autoSlideInterval = setInterval(scrollNext, 3000);
+  };
 
-      // Check if we are at the beginning of the slider and reset to the last card only if needed
-      if (slider.scrollLeft <= 0) {
-        slider.scrollLeft = slider.scrollWidth - slider.offsetWidth;
-      }
-    });
+  // Stop auto-slide
+  const stopAutoSlide = () => {
+    clearInterval(autoSlideInterval);
+  };
 
-    nextBtn.addEventListener('click', () => {
-      slider.scrollBy({
-        left: slider.offsetWidth, // Scroll one card width to the right
-        behavior: 'smooth',
-      });
+  // Event listeners for buttons
+  prevBtn.addEventListener("click", () => {
+    stopAutoSlide();
+    scrollPrev();
+    startAutoSlide();
+  });
 
-      // Check if we are at the end of the slider and reset to the first card only if needed
-      if (slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth) {
-        slider.scrollLeft = 0;
-      }
-    });
+  nextBtn.addEventListener("click", () => {
+    stopAutoSlide();
+    scrollNext();
+    startAutoSlide();
+  });
 
-    // For mobile screens, hide manual buttons and enable infinite auto-scroll continuously
-    if (window.innerWidth <= 768) {
-      prevBtn.style.display = 'none';
-      nextBtn.style.display = 'none';
+  // Start auto-slide on page load
+  startAutoSlide();
 
-      // Start infinite auto-scrolling
-      setInterval(autoScroll, 3000); // Auto scroll every 3 seconds
-    }
-  </script>
+  // Pause auto-slide on hover
+  slider.addEventListener("mouseenter", stopAutoSlide);
+  slider.addEventListener("mouseleave", startAutoSlide);
+</script>

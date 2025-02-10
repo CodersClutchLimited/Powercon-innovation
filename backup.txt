@@ -1,0 +1,38 @@
+  <div class="relative  cont1 mx-auto">
+    <div class="w-full flex justify-center items-center">
+      <div class="relative overflow-hidden max-w-screen-xl bg-white mx-auto">
+        <div id="auto-slider" class="flex gap-6 mx-auto">
+          <!-- Slide 1 -->
+          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
+            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
+              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
+          </div>
+          <!-- Slide 2 -->
+          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
+            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
+              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
+          </div>
+          <!-- Slide 3 -->
+          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
+            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
+              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
+          </div>
+          <!-- Slide 4 -->
+          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
+            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
+              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
+          </div>
+          <!-- Slide 5 -->
+          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
+            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
+              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
+          </div>
+          <!-- Slide 6 -->
+          <div class="flex-shrink-0 w-40 h-28 text-center mx-4">
+            <img src="https://codersclutch.com/wp-content/uploads/2024/05/coders-logo.png" alt="Best Performer Award"
+              class="w-full h-full object-contain rounded-md opacity-75" aria-label="Best Performer Award">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
