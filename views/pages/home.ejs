@@ -4,6 +4,17 @@
   .iconhover:hover {
     background: rgb(5, 5, 92);
   }
+
+  .overme {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.overme::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+
   .negativemargin {
     margin-top: -100px;
   }
@@ -201,7 +212,7 @@
     <!-- Slider -->
     <div
       id="slider"
-      class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth"
+      class="flex overme overflow-x-auto snap-x snap-mandatory scroll-smooth"
     >
       <!-- Card 1 -->
       <div class="flex-none w-3/4 sm:w-1/2 md:w-1/4 snap-center p-2">
